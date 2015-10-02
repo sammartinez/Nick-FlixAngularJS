@@ -16,7 +16,7 @@
   <div id="new-review">
   <h2>Create a Movie Review</h2>
     <form ng-submit="ReviewsFactory.addReview()" role="form">
-      <input type="text" ng-model="reviewTitle" class="form-control" placeholder="Name of movie...."></input> <br>
+      <input type="text" ng-model="ReviewsFactory.reviewTitle" class="form-control" placeholder="Name of movie...."></input> <br>
       <textarea ng-model="ReviewsFactory.reviewMovie" rows="5" class="form-control" placeholder="Place your review here..."></textarea> <br>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
