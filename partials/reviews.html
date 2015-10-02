@@ -2,16 +2,14 @@
   <div class="col-sm-4" ng-show="reviews.length">
     <ul>
       <li ng-repeat="review in reviews">
-      <h3>  {{ review.title }} </h3>
-        {{ review.reviewMovie }}
+      <h3><a ui-sref="reviewInDepth({reviewId: review.id})"> {{ review.title }} </a></h3>
       </li>
     </ul>
   </div>
 </div>
 
 
-  <!-- This will be towards the bottom of the page  -->
-
+<!-- Below is where you're able to add new movie reviews. -->
 <div class="col-sm-8 movie-input">
   <div id="new-review">
   <h2>Create a Movie Review</h2>
