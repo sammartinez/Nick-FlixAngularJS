@@ -1,0 +1,9 @@
+body {
+  padding-top: 125px;
+}
+
+.centerPage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

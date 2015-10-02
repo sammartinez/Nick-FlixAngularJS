@@ -1,4 +1,4 @@
-var nickFlicks = anuglar.module('nickFlicks', ['ui.router']);
+var nickFlicks = angular.module('nickFlicks', ['ui.router']);
 
 nickFlicks.config(function($stateProvider) {
   $stateProvider.state('home', {
@@ -13,6 +13,16 @@ nickFlicks.config(function($stateProvider) {
     }
   });
 
-  //This is where the next page would go.. 
+  $stateProvider.state('reviews', {
+    url:"",
+    views: {
+      'header': {
+        templateUrl: 'partials/header.html',
+      },
+      'body': {
+        templateUrl: 'partials/reviews.html'
+      },
+    }
+  });
 
 });
