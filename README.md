@@ -10,6 +10,11 @@ Install Nick-Flicks by cloning this repository:
 ```
 https://github.com/sammartinez/Nick-FlixAngularJS
 ```
+Once installed, in your terminal type in the command below and navigate to localhost:8000 on your web browser
+
+```
+python -m SimpleHTTPServer 
+```
 
 Contribute
 ---------
