@@ -11,3 +11,11 @@ body {
 .invert-butt {
   float: right;
 }
+
+.normal {
+	filter: invert(0%);
+}
+
+.inverted {
+	filter: invert(100%);
+}
