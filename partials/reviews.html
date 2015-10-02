@@ -1,22 +1,23 @@
-<div class="container">
-  <a href="#">Movie review links here</a> <br>
-  <a href="#">Movie review links here</a> <br>
-  <a href="#">Movie review links here</a> <br>
-  <a href="#">Movie review links here</a> <br>
-
-
-
-  <p>
-    <!-- Need something here in order to show the movie review after its submitted.  -->
-  </p>
+<div class="row">
+  <div class="col-sm-4" ng-show="reviews.length">
+    <ul>
+      <li ng-repeat="review in reviews">
+      <h3>  {{ review.title }} </h3>
+        {{ review.reviewMovie }}
+      </li>
+    </ul>
+  </div>
+</div>
 
 
   <!-- This will be towards the bottom of the page  -->
-<div class="col-sm-9 movie-input">
+
+<div class="col-sm-8 movie-input">
+  <div id="new-review">
   <h2>Create a Movie Review</h2>
-    <form ng-submit="addReview()">
+    <form ng-submit="ReviewsFactory.addReview()" role="form">
       <input type="text" ng-model="reviewTitle" class="form-control" placeholder="Name of movie...."></input> <br>
-      <textarea ng-model="reviewMovie" rows="8" class="form-control" placeholder="Place your review here..."></textarea> <br>
+      <textarea ng-model="ReviewsFactory.reviewMovie" rows="5" class="form-control" placeholder="Place your review here..."></textarea> <br>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
   </div>

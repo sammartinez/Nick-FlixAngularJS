@@ -20,7 +20,8 @@ nickFlicks.config(function($stateProvider) {
         templateUrl: 'partials/header.html',
       },
       'body': {
-        templateUrl: 'partials/reviews.html'
+        templateUrl: 'partials/reviews.html',
+        controller: 'ReviewsCtrl'
       },
     }
   });
