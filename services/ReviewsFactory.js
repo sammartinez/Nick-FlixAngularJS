@@ -3,7 +3,7 @@ nickFlicks.factory('ReviewsFactory', function ReviewsFactory() {
   //Starting with a blank factory to use for the review.
   var factory = {};
 
-  //Hard coding a couple reviews into the page in order to see that the functionality is working.
+  //Hard coding a few reviews into the page in order to see that the functionality is working.
   factory.reviews = [
     {
       title: 'Star Wars: The Force Awakens',

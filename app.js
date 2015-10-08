@@ -29,7 +29,8 @@ nickFlicks.config(function($stateProvider) {
     }
   });
 
-//When a link is clicked on the reviews.html page, this is the page that is loaded.
+/* When a review is clicked on the reviews.reviewDetail.html page, it'll render the page
+to the ui-view body */
   $stateProvider.state('reviews.reviewDetail', {
     url:"/:reviewId",
     views: {

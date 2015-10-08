@@ -7,20 +7,17 @@
     </ul>
   </div>
 
+  <div class="col-sm-7 movie-input">
 
-
-<!-- Below is where you're able to add new movie reviews. -->
-  <div class="col-sm-8 movie-input">
-
+    <!--This will display the review once a reivew is clicked on  -->
     <div ui-view="body"></div>
+    <!-- End of displaying review -->
 
-    <div class="form-group">
     <h3>Create a Movie Review</h3>
       <form ng-submit="ReviewsFactory.addReview()" role="form">
         <input type="text" ng-model="ReviewsFactory.reviewTitle" class="form-control" placeholder="Name of movie...."></input> <br>
         <textarea ng-model="ReviewsFactory.reviewMovie" rows="5" class="form-control" placeholder="Place your review here..."></textarea> <br>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-    </div>
   </div>
 </div>

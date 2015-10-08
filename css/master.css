@@ -1,22 +1,17 @@
+/* Padding is used on the body in order to not let the header and body bleed
+into each other */
 body {
   padding-top: 125px;
 }
 
-.centerPage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.invert-butt {
+/* For the night mode button to float right and have padding on the top equal
+32px or 2em */
+.invert-button {
   float: right;
   padding-top: 2em;
 }
 
-.normal {
-	filter: invert(0%);
-}
-
+/* webkit is used below in order to invert the entire element within the body */
 .invert {
   background-color: black;
   -webkit-filter: invert(100%);
