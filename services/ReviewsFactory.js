@@ -20,6 +20,21 @@ nickFlicks.factory('ReviewsFactory', function ReviewsFactory() {
       reviewMovie: 'Not as good as the first one I think but what sequel is am I right?!',
       id: 3
     },
+    {
+      title: 'Lord of the Rings: The Fellowship of the Ring',
+      reviewMovie: 'By far, one of the best movies of all time I believe. ',
+      id: 4
+    },
+    {
+      title: 'The Village',
+      reviewMovie: 'This was one of those movies that even I at the young age of ten figured the plot out before the movie was even half way through.',
+      id: 5
+    },
+    {
+      title: 'The Shawshank Redemption',
+      reviewMovie: 'Best performance I\'ve ever seen from Morgan Freeman',
+      id: 6
+    }
   ];
 
 /* Once the button is pressed to add another review on the reviews.html page, this function is used in order to push the
