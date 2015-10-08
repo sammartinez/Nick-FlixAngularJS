@@ -14,7 +14,12 @@ nickFlicks.factory('ReviewsFactory', function ReviewsFactory() {
       title: 'Fast and the Furious 7',
       reviewMovie: 'It was a good movie but it was defintely overdone with CGI. I remember the original ones being so much better.',
       id: 2
-    }
+    },
+    {
+      title: 'Pitch Perfect 2',
+      reviewMovie: 'Not as good as the first one I think but what sequel is am I right?!',
+      id: 3
+    },
   ];
 
 /* Once the button is pressed to add another review on the reviews.html page, this function is used in order to push the

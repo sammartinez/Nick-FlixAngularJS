@@ -29,15 +29,15 @@ nickFlicks.config(function($stateProvider) {
     }
   });
 
-//When a link is clicked on the reviews.html page, this is the page that is loaded. 
-  $stateProvider.state('reviewInDepth', {
+//When a link is clicked on the reviews.html page, this is the page that is loaded.
+  $stateProvider.state('reviews.reviewDetail', {
     url:"/:reviewId",
     views: {
       'header': {
         templateUrl: 'partials/header.html',
       },
       'body': {
-        templateUrl: 'partials/review.detail.html',
+        templateUrl: 'partials/reviews.reviewDetail.html',
         controller: 'ReviewsCtrl'
       },
     }

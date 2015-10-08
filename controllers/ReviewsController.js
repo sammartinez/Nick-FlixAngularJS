@@ -2,9 +2,9 @@ nickFlicks.controller('ReviewsCtrl',  function ReviewsCtrl($scope, $stateParams,
   $scope.reviews = ReviewsFactory.reviews;
   $scope.ReviewsFactory = ReviewsFactory;
 
+  $scope.currentReview = null;
 
-//Shows the current movie review when it matches the id for the movie review.
-  if ($stateParams.reviewId) {
-        $scope.currentReview = UtilitiesFactory.findById(ReviewsFactory.reviews, $stateParams.reviewId);
-    }
+   if ($stateParams.reviewId) {
+       $scope.currentReview = UtilitiesFactory.findById(ReviewsFactory.reviews, $stateParams.reviewId);
+   }
 });
