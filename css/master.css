@@ -10,12 +10,14 @@ body {
 
 .invert-butt {
   float: right;
+  padding-top: 2em;
 }
 
 .normal {
 	filter: invert(0%);
 }
 
-.inverted {
-	filter: invert(100%);
+.invert {
+  background-color: black;
+  -webkit-filter: invert(100%);
 }
